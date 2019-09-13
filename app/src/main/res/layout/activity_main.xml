@@ -61,15 +61,15 @@
                 android:text="How Many Candles?" />
 
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/candleBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="5"
+                android:layout_marginTop="15dp"
 
+                android:layout_weight="1"
+                android:max="5"
                 android:min="0"
                 android:progress="2"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
 
                 />
 
