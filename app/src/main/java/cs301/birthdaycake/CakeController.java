@@ -10,6 +10,9 @@ public class CakeController implements View.OnClickListener, CompoundButton.OnCh
         SeekBar.OnSeekBarChangeListener, View.OnTouchListener{
     private CakeView cView;
     private CakeModel cModel;
+    public int onTouchX;
+    public int onTouchY;
+
 
     public CakeController(CakeView cv) {
         cView = cv;
@@ -42,8 +45,8 @@ public class CakeController implements View.OnClickListener, CompoundButton.OnCh
 
     public boolean onTouch(View v, MotionEvent event)
     {
-        cModel.balloonX = (int) event.getX();
-        cModel.balloonY = (int) event.getY();
+        cModel.touchX= (int) event.getX();
+        cModel.touchY = (int) event.getY();
         cView.invalidate();
         return true;
     }

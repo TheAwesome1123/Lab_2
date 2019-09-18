@@ -16,6 +16,7 @@ public class CakeView extends SurfaceView {
     Paint outerFlamePaint = new Paint();
     Paint innerFlamePaint = new Paint();
     Paint wickPaint = new Paint();
+    Paint location = new Paint();
 
     Paint balloonColor = new Paint();
 
@@ -71,7 +72,8 @@ public class CakeView extends SurfaceView {
 
 
         setBackgroundColor(Color.WHITE);  //better than black default
-
+        location.setTextSize(40);
+        location.setColor(Color.RED);
     }
 
     /**
@@ -159,6 +161,7 @@ public class CakeView extends SurfaceView {
         canvas.drawLine((float) cModel.balloonX + 50, (float) cModel.balloonY + 200, (float) cModel.balloonX + 70,
                 (float) cModel.balloonY + 600, stringColor);
 
+        canvas.drawText(cModel.touchX + ", " + cModel.touchY, 0,700, location);
     }//onDraw
     public CakeModel getCakeModel() {
         return cModel;

@@ -7,4 +7,6 @@ public class CakeModel {
     public boolean hasCandles = true;
     public int balloonX = 0;
     public int balloonY = 0;
+    public int touchX;
+    public int touchY;
 }
