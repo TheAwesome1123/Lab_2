@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         candles.setOnCheckedChangeListener(cc);
         SeekBar candleCount = (SeekBar) findViewById(R.id.candleBar);
         candleCount.setOnSeekBarChangeListener(cc);
+        cv.setOnTouchListener(cc);
     }
 
     public void goodbye(View button) {
