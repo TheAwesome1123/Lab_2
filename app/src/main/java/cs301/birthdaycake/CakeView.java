@@ -157,9 +157,9 @@ public class CakeView extends SurfaceView {
 
 
 
-        canvas.drawOval((float)cModel.balloonX, (float)cModel.balloonY, (float) cModel.balloonX + 100, (float) cModel.balloonY + 200, balloonColor);
-        canvas.drawLine((float) cModel.balloonX + 50, (float) cModel.balloonY + 200, (float) cModel.balloonX + 70,
-                (float) cModel.balloonY + 600, stringColor);
+        canvas.drawOval((float)cModel.touchX, (float)cModel.touchY, (float) cModel.touchX + 100, (float) cModel.touchY + 200, balloonColor);
+        canvas.drawLine((float) cModel.touchX + 50, (float) cModel.touchY + 200, (float) cModel.touchX + 70,
+                (float) cModel.touchY + 600, stringColor);
 
         canvas.drawText(cModel.touchX + ", " + cModel.touchY, 0,700, location);
     }//onDraw
